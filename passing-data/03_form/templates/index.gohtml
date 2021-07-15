@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="fname">
+        <input type="text" name="lname">
+        <input type="checkbox" name="sub">
+        <input type="submit">
+    </form>
+    <div>
+        <div style="display: flex; align-items: center;">
+            <h3>First name: </h3>
+            {{.Firstname}}
+        </div>
+        <div style="display: flex; align-items: center;">
+            <h3>Last name: </h3>
+            {{.Lastname}}
+        </div>
+        <div style="display: flex; align-items: center;">
+            <h3>Sub: </h3>
+            {{.Sub}}
+        </div>
+   
+    </div>
+    
+</body>
+</html>
